@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<conio.h>
-int a[6], n, elem, i, pos;
+int a[100], n, elem, i, pos;
 void create()
 {
    printf("\nEnter the size of the array elements: ");

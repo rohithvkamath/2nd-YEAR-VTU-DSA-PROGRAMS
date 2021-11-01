@@ -2,7 +2,7 @@
 ## This is a repository which contains the lab programs of the DSA lab of VTU syllabus.
 
 <h1>The lab programs are as follows:</h1><br>
-<h3><b>Program 1</b></h3><br>
+<a href="https://github.com/rohithvkamath/2nd-YEAR-VTU-DSA-PROGRAMS/blob/main/program1.c"><h3><b>Program 1</b></h3></a><br>
 Design, Develop and Implement a menu driven Program in C for the following Array operations<br>
 a. Creating an Array of N Integer Elements<br>
 b. Display of Array Elements with Suitable Headings<br>

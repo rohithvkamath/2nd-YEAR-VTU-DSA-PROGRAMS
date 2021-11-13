@@ -1,49 +1,61 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<conio.h>
-int a[100], n, elem, i, pos;
+int *a , n, elem, i, pos;
 void create()
 {
-   printf("\nEnter the size of the array elements: ");
+   printf("\nEnter the size of the elements: ");
    scanf("%d", &n);
-   printf("\nEnter the elements for the array:\n");
+   a=(int*)malloc(n*sizeof(int));
+   printf("\nEnter the elements :\n");
    for(i=0; i<n; i++)
-   scanf("%d", &a[i]);
+   scanf("%d", a+i);
 }
 void display()
 {
    int i;
-   printf("\nThe array elements are:\n");
+   printf("\nThe elements are:\n");
    for(i=0; i<n; i++)
    {
-   printf("%d\t", a[i]);
+    printf("%d\t", *(a+i));
    }
 }
 void insert()
 {
+
    printf("\nEnter the position for the new element: ");
    scanf("%d", &pos);
    printf("\nEnter the element to be inserted: ");
    scanf("%d", &elem);
    for(i=n-1; i>=pos; i--)
    {
-      a[i+1] = a[i];
+      *(a+i+1) = *(a+i);
    }
-   a[pos] = elem;
+   *(a+pos-1)= elem;
    n = n+1;
+   printf("\nThe elements after insertion is : \n");
+   for(i=0; i<n; i++)
+   {
+    printf("%d\t", *(a+i));
+   }
 }
 void del() //deleting an array element
 {
    printf("\nEnter the position of the element to be deleted: ");
    scanf("%d", &pos);
-   pos=pos-1;
-   elem = a[pos];
+   pos-=1;
+   elem = *(a+pos);
    for(i=pos; i<n-1; i++)
    {
-      a[i] = a[i+1];
+     *(a+i) = *(a+i+1);
    }
    n = n-1;
-   printf("\nThe deleted element is = %d", elem);
+   printf("\nThe deleted element is = %d\n", elem);
+   printf("\nThe elements after deletion is: \n");
+   for(i=0; i<n; i++)
+   {
+    printf("%d\t", *(a+i));
+   }
 }
 void main()
 {

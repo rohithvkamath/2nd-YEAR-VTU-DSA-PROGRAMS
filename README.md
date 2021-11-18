@@ -11,14 +11,14 @@ d. Deleting an Element at a given valid Position(POS)<br>
 e. Exit.<br>
 Support the program with functions for each of the above operations.<br>
 
-<h3><b>Program 2</b></h3><br>
+<h3><b><a href="https://github.com/rohithvkamath/2nd-YEAR-VTU-DSA-PROGRAMS/blob/main/program2.c">Program 2</a></h3></b><br>
 Design, Develop and Implement a Program in C for the following operations on Strings<br>
 a. Read a main String (STR), a Pattern String (PAT) and a Replace String (REP)<br>
 b. Perform Pattern Matching Operation: Find and Replace all occurrences of PAT in STR
-with REP if PAT exists in STR. Report suitable messages in case PAT does not exist in
-STR<br>
-Support the program with functions for each of the above operations. Don't use Built-in
-functions<br>
+   with REP if PAT exists in STR. Report suitable messages in case PAT does not exist in
+   STR<br>
+Support the program with functions for each of the above operations. <br>
+<b>Don't use Built-in functions</b><br>
 
 <h3><b>Program 3</b></h3><br>
 Design, Develop and Implement a menu driven program in C for the following operations on

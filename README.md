@@ -20,7 +20,7 @@ b. Perform Pattern Matching Operation: Find and Replace all occurrences of PAT i
 Support the program with functions for each of the above operations. <br>
 <b>Don't use Built-in functions</b><br>
 
-<h3><b>Program 3</b></h3><br>
+<h3><b><a href="https://github.com/rohithvkamath/2nd-YEAR-VTU-DSA-PROGRAMS/blob/main/program3.c">Program 3</a></h3></b><br>
 Design, Develop and Implement a menu driven program in C for the following operations on
 STACK of integers (Array implementation of stack with maximum size MAX)<br>
 a. Push an element on to stack<br>

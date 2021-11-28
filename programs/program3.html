@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <title>
+            PROGRAM 3
+        </title>
+    </head>
+    <body bgcolor='lightblue'>
+        <center><h1>PROGRAM 3</h1></center><br>
+        <center><h3> Design, Develop and Implement a menu driven Program in C for the following Array operations<br>
+            Design, Develop and Implement a menu driven program in C for the following operations on
+        STACK of integers (Array implementation of stack with maximum size MAX)<br>
+        a. Push an element on to stack<br>
+        b. Pop an element from stack.<br>
+        c. Demonstrate how stack can be used to check palindrome.<br>
+        d. Demonstrate Overflow and Underflow situations on stack.<br>
+        e. Display the status of stack.<br>
+        f. Exit.<br>
+        Support the program with appropriate functions for each of the above operations.<br></h3></center>
+    <b><h1> 
+    <pre>
+        <code>
+#include&lt;stdio.h&gt;
+#include&lt;stdlib.h&gt;
+#define MAX 10
+int stack[MAX],item;
+int ch,top=-1,status=0;
+void push(int stack[],int item)
+{
+    if(top==(MAX-1))
+    printf("\n\n Stack Overflow");
+    else
+    {
+        stack[++top]=item;
+        status++;
+    }
+
+}
+int pop (int stack[])
+{
+    int ret;
+    if(top==-1)
+        printf("\n\n Stack underflow");
+    else
+    {
+            ret=stack[top--];
+            status--;
+            printf("\n popped element is %d",ret);
+    }    
+        return ret;
+
+}
+void palindrome(int stack[])
+{
+    int i,temp,count=0;
+    temp=status;
+    for(i=0;i&lt;temp;i++)
+    {
+        if(stack[i]==pop(stack))
+        count++;
+    }
+    if (temp==count)
+    printf("\n Stack contents are Palindrome");
+    else
+    printf("\n Stack contents are not Palindrome");
+}
+void display(int stack[])
+{
+    int i;
+    printf("\n Stack contents are:");
+    if (top==-1)
+    printf("\n Stack is empty");
+    else
+    {
+        for(i=top;i&gt;=0;i--)
+        printf("\n......\n|%d|",stack[i]);
+        printf("\n");
+    }
+}
+  
+void main()
+{       do
+        {
+            printf("\n\n......Main Menu......\n");
+            
+            printf("\n 1.Push(Insert) in stack\n");
+            printf("\n 2.Pop(Delete) from the stack\n");
+            printf("\n 3.Palindrome check using stack\n");
+            printf("\n 4.Exit (End the Execution\n");
+            printf("\n Enter your choice\n");
+            scanf("%d",&amp;ch);
+            switch(ch)
+
+                {
+                 case 1:printf("\n Enter an element to be pushed:");
+                 scanf("%d",&amp;item);
+                 push(stack,item);
+                 display(stack);
+                 break;
+                 case 2:pop(stack);
+                 display(stack);
+                 break;
+                 case 3:palindrome(stack);
+                 break;
+                 case 4: exit(0);
+                 default:printf("\n Enter a valid choice ");
+                }
+        }while(ch!=4);
+}
+</code>
+</pre>
+</h1></b>
+   
+</body>
+</html>

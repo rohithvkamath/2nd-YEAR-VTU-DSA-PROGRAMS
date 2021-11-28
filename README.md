@@ -2,7 +2,7 @@
 ## This is a repository which contains the lab programs of the DSA lab of VTU syllabus.
 
 <h1>The lab programs are as follows:</h1><br>
-<h3><b><a href="https://github.com/rohithvkamath/2nd-YEAR-VTU-DSA-PROGRAMS/blob/main/program1.c">Program 1</a></h3></b><br>
+<h3><b><a href="https://github.com/rohithvkamath/2nd-YEAR-VTU-DSA-PROGRAMS/blob/main/c_programs/program1.c">Program 1</a></h3></b><br>
 Design, Develop and Implement a menu driven Program in C for the following Array operations<br>
 a. Creating an Array of N Integer Elements<br>
 b. Display of Array Elements with Suitable Headings<br>
@@ -11,7 +11,7 @@ d. Deleting an Element at a given valid Position(POS)<br>
 e. Exit.<br>
 Support the program with functions for each of the above operations.<br>
 
-<h3><b><a href="https://github.com/rohithvkamath/2nd-YEAR-VTU-DSA-PROGRAMS/blob/main/program2.c">Program 2</a></h3></b><br>
+<h3><b><a href="https://github.com/rohithvkamath/2nd-YEAR-VTU-DSA-PROGRAMS/blob/main/c_programs/program2.c">Program 2</a></h3></b><br>
 Design, Develop and Implement a Program in C for the following operations on Strings<br>
 a. Read a main String (STR), a Pattern String (PAT) and a Replace String (REP)<br>
 b. Perform Pattern Matching Operation: Find and Replace all occurrences of PAT in STR
@@ -20,7 +20,7 @@ b. Perform Pattern Matching Operation: Find and Replace all occurrences of PAT i
 Support the program with functions for each of the above operations. <br>
 <b>Don't use Built-in functions</b><br>
 
-<h3><b><a href="https://github.com/rohithvkamath/2nd-YEAR-VTU-DSA-PROGRAMS/blob/main/program3.c">Program 3</a></h3></b><br>
+<h3><b><a href="https://github.com/rohithvkamath/2nd-YEAR-VTU-DSA-PROGRAMS/blob/main/c_programs/program3.c">Program 3</a></h3></b><br>
 Design, Develop and Implement a menu driven program in C for the following operations on
 STACK of integers (Array implementation of stack with maximum size MAX)<br>
 a. Push an element on to stack<br>

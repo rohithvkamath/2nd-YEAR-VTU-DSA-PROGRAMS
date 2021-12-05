@@ -1,0 +1,31 @@
+body {
+    background-color: lavender;
+  }
+  
+  h1 {
+    color: whitesmoke;
+    background-color:black ;opacity: 0.6;
+    text-align: center;
+    font-size: 36px;
+  }
+  h3{
+    color:royalblue;
+    background-color: blanchedalmond;
+    text-align: center;
+    font-size: 20px;
+  }
+  pre{
+      color:black;
+      background-color: aqua;
+      text-align: justify;
+      
+      font-size: 15px;
+
+  }
+
+  h6{
+    color:black;
+    background-color: white;
+    
+
+  }

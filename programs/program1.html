@@ -1,111 +1,115 @@
 <html>
     <head>
-        <title>
-            PROGRAM 1
-        </title>
+        <link rel="stylesheet" href="program.css">
+        
     </head>
-    <body bgcolor='lightblue'>
-        <center><h1>PROGRAM 1</h1></center><br>
-        <center><h3> Design, Develop and Implement a menu driven Program in C for the following Array operations<br>
+
+    <body>
+        <h1>PROGRAM 1</h1>
+        <div>  Design, Develop and Implement a menu driven Program in C for the following Array operations<br>
             a. Creating an Array of N Integer Elements<br>
             b. Display of Array Elements with Suitable Headings<br>
             c. Inserting an Element (ELEM) at a given valid Position (POS)<br>
             d. Deleting an Element at a given valid Position(POS)<br>
             e. Exit.<br>
-            Support the program with functions for each of the above operations.<br></h3></center>
-    <b><h1> 
+            Support the program with functions for each of the above operations.<br>
+        </div>
+    <b>
+    
     <pre>
         <code>
-            #include&#x3C;stdio.h&#x3E;
-            #include&#x3C;stdlib.h&#x3E;
-            #include&#x3C;conio.h&#x3E;
-            int *a , n, elem, i, pos;
-            void create()
-            {
-               printf(&#x22;\nEnter the size of the elements: &#x22;);
-               scanf(&#x22;%d&#x22;, &#x26;n);
-               a=(int*)malloc(n*sizeof(int));
-               printf(&#x22;\nEnter the elements :\n&#x22;);
-               for(i=0; i&#x3C;n; i++)
-                    scanf(&#x22;%d\n&#x22;, a+i);
-            }
-            void display()
-            {
-               int i;
-               printf(&#x22;\nThe elements are:\n&#x22;);
-               for(i=0; i&#x3C;n; i++)
-               {
-                printf(&#x22;%d\t&#x22;, *(a+i));
-               }
-            }
-            void insert()
-            {
+#include&#x3C;stdio.h&#x3E;
+#include&#x3C;stdlib.h&#x3E;
+#include&#x3C;conio.h&#x3E;
+int *a , n, elem, i, pos;
+void create()
+{
+    printf(&#x22;\nEnter the size of the elements: &#x22;);
+    scanf(&#x22;%d&#x22;, &#x26;n);
+    a=(int*)malloc(n*sizeof(int));
+    printf(&#x22;\nEnter the elements :\n&#x22;);
+    for(i=0; i&#x3C;n; i++)
+        scanf(&#x22;%d\n&#x22;, a+i);
+}
+void display()
+{
+    int i;
+    printf(&#x22;\nThe elements are:\n&#x22;);
+    for(i=0; i&#x3C;n; i++)
+    {
+        printf(&#x22;%d\t&#x22;, *(a+i));
+    }
+}
+void insert()
+{
             
-               printf(&#x22;\nEnter the position for the new element: &#x22;);
-               scanf(&#x22;%d&#x22;, &#x26;pos);
-               printf(&#x22;\nEnter the element to be inserted: &#x22;);
-               scanf(&#x22;%d&#x22;, &#x26;elem);
-               for(i=n-1; i&#x3E;=pos; i--)
-               {
-                  *(a+i+1) = *(a+i);
-               }
-               *(a+pos-1)= elem;
-               n = n+1;
-               printf(&#x22;\nThe elements after insertion is : \n&#x22;);
-               for(i=0; i&#x3C;n; i++)
-               {
-                printf(&#x22;%d\t&#x22;, *(a+i));
-               }
-            }
-            void del() //deleting an array element
-            {
-               printf(&#x22;\nEnter the position of the element to be deleted: &#x22;);
-               scanf(&#x22;%d&#x22;, &#x26;pos);
-               pos-=1;
-               elem = *(a+pos);
-               for(i=pos; i&#x3C;n-1; i++)
-               {
-                 *(a+i) = *(a+i+1);
-               }
-               n = n-1;
-               printf(&#x22;\nThe deleted element is = %d\n&#x22;, elem);
-               printf(&#x22;\nThe elements after deletion is: \n&#x22;);
-               for(i=0; i&#x3C;n; i++)
-               {
-                printf(&#x22;%d\t&#x22;, *(a+i));
-               }
-            }
-            void main()
-            {
-               int ch;
+    printf(&#x22;\nEnter the position for the new element: &#x22;);
+    scanf(&#x22;%d&#x22;, &#x26;pos);
+    printf(&#x22;\nEnter the element to be inserted: &#x22;);
+    scanf(&#x22;%d&#x22;, &#x26;elem);
+    for(i=n-1; i&#x3E;=pos; i--)
+    {
+        *(a+i+1) = *(a+i);
+    }
+    *(a+pos-1)= elem;
+    n = n+1;
+    printf(&#x22;\nThe elements after insertion is : \n&#x22;);
+    for(i=0; i&#x3C;n; i++)
+    {
+        printf(&#x22;%d\t&#x22;, *(a+i));
+    }
+}
+void del() //deleting an array element
+{
+    printf(&#x22;\nEnter the position of the element to be deleted: &#x22;);
+    scanf(&#x22;%d&#x22;, &#x26;pos);
+    pos-=1;
+    elem = *(a+pos);
+    for(i=pos; i&#x3C;n-1; i++)
+    {
+        *(a+i) = *(a+i+1);
+    }
+    n = n-1;
+    printf(&#x22;\nThe deleted element is = %d\n&#x22;, elem);
+    printf(&#x22;\nThe elements after deletion is: \n&#x22;);
+    for(i=0; i&#x3C;n; i++)
+    {
+        printf(&#x22;%d\t&#x22;, *(a+i));
+    }
+}
+void main()
+{
+    int ch;
             
-               do
-               {
-                  printf(&#x22;\n\n--------Menu-----------\n&#x22;);
-                  printf(&#x22;1.Create\n 2.Display\n 3.Insert\n 4.Delete\n 5.Exit\n&#x22;);
-                  printf(&#x22;-------------------------------&#x22;);
-                  printf(&#x22;\nEnter your choice: &#x22;);
-                  scanf(&#x22;%d&#x22;, &#x26;ch);
-                  switch(ch)
-                  {
-                     case 1: create();
+    do
+    {
+        printf(&#x22;\n\n--------Menu-----------\n&#x22;);
+        printf(&#x22;1.Create\n 2.Display\n 3.Insert\n 4.Delete\n 5.Exit\n&#x22;);
+        printf(&#x22;-------------------------------&#x22;);
+        printf(&#x22;\nEnter your choice: &#x22;);
+        scanf(&#x22;%d&#x22;, &#x26;ch);
+        switch(ch)
+        {
+            case 1: create();
+            break;
+            case 2: display();
                      break;
-                     case 2: display();
+            case 3: insert();
                      break;
-                     case 3: insert();
-                     break;
-                     case 4: del();
-                     break;
-                     case 5: exit(0);
-                     break;
-                     default: printf(&#x22;\nInvalid choice:\n&#x22;);
-                     break;
-                  }
-               }while(ch!=5);
+            case 4: del();
+                    break;
+            case 5: exit(0);
+                    break;
+            default: printf(&#x22;\nInvalid choice:\n&#x22;);
+                    break;
+        }
+    }while(ch!=5);
             
-            }
-        </code>
+}
+    </code>
     </pre>
-    </h1></b>
+    </b>
+       
     </body>
+    <centre><h5>Developed by Anonymous. All rights reserved.</h5></centre>
 </html>

@@ -3,7 +3,7 @@
 int F(char symbol)
 { 
    switch(symbol) 
-   { 
+    { 
      case '+' : 
      case '-': return 2; 
      case '*': 
@@ -18,7 +18,7 @@ int F(char symbol)
 int G(char symbol) 
 { 
     switch(symbol) 
-   { 
+    { 
      case '+': 
      case '-': return 1; 
      case '*': 
@@ -38,7 +38,7 @@ void infix_postfix(char infix[], char postfix[])
  s[++top] = '#'; 
  j = 0; 
  for(i=0; i < strlen(infix); i++) 
-   { 
+    { 
      symbol = infix[i]; 
      while(F(s[top]) > G(symbol))
        { 

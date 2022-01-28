@@ -1,0 +1,138 @@
+.navbar {
+    overflow: hidden;
+    background-color: #537895;
+    background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+.navbar a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.main{
+    padding: 15px;
+    margin-top: 60px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 46px;
+    color: black;
+}
+.wel{
+    border: none;
+    background-color: #9eabe4;
+    background-image: linear-gradient(315deg, #9eabe4 0%, #77eed8 74%);
+    padding: 15px;
+    font-size: 36px;
+    border-radius: 20px;
+    
+}
+.pgmno{
+    border: none;
+    margin: 15px;
+    background-color: #9eabe4;
+    background-image: linear-gradient(315deg, #9eabe4 0%, #77eed8 74%);
+    padding: 5px;
+    font-size: 26px;
+    cursor: pointer;
+    text-align: center;
+}
+.pgmno a{
+    color:black;
+    text-decoration: none;
+}
+
+.pgmno:hover{text-decoration: underline;}
+
+  
+.program_head{
+    padding: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    border:none;
+    background-color: white;
+
+}
+.navbar a:hover {
+    background: white;
+    color: black;
+}
+body{
+    margin:0;
+  /*  background-image: linear-gradient(315deg, #6a93cb 25%, #a4bfef 74%);*/
+    background: url("images/background.jpg");
+    scroll-behavior: smooth;
+    background-attachment: fixed;
+    font-family: 'Trebuchet MS';
+}
+  
+
+.center{
+    font-family: 'trebuchet MS';
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-wrap:wrap;
+    
+}
+.item{
+    border-radius: 15px;
+    flex: 1 1 250px;
+
+}
+.button {
+    background-image: linear-gradient(315deg, #734ae8 0%, #89d4cf 74%);
+    border: none;
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+    margin:20px 15px;
+    cursor: pointer;
+    
+    
+}
+pgm{
+    border:none;
+    margin:15px;
+    background-color: #f9ea8f;
+    background-image: linear-gradient(315deg, #f9ea8f 0%, #aff1da 74%);
+    font-size: 20px;
+    padding:15px 15px;
+    padding-left: 5%;
+    border-radius: 15px;
+}
+right{
+    border:none;
+    margin:15px;
+    color: whitesmoke;
+    background-color: #485461;
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+    font-size: 15px;
+    padding:10px 10px;
+    text-align: center;
+    border-radius: 15px;
+    min-width: 50px;
+}
+button:hover{text-decoration: underline;}
+@media screen and (max-width:720px) {
+.botton{
+    font-size: 8px;
+    margin:auto;
+}
+@media screen  and (min-width:721px) {
+.botton{
+    font-size: 12px;
+}
+    
+}
+    
+}
+
+
+  

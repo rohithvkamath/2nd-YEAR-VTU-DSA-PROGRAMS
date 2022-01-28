@@ -66,7 +66,7 @@ h1{
 h5{
   border: 5px solid black;
    width: auto;
-   font-size: large;
+   font-size: 15px;
 }
 }
 
@@ -76,13 +76,13 @@ pre{
     color:black;
     text-align: relative;
     border: 3px solid black;
-    width:100% ;
+    width:relative;
     background-color: aqua;
     font-size: 15px;
      
 }
 h1{
-  font-size:26px;
+  font-size:23px;
 }
 div{
   font-size: 18px;
@@ -91,6 +91,11 @@ div{
 }
 code{
   font-size: 15px;
+}
+h5{
+  border: 5px solid black;
+   width: auto;
+   font-size: 5px;
 }
 }
 pre{
@@ -111,6 +116,7 @@ pre{
 
 h5{
   color:black;
+  font-size:15px;
   background-color: white;
   text-align: center;
   border: 5px solid black;

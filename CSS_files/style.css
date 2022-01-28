@@ -115,6 +115,8 @@ right{
     background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
     font-size: 15px;
     padding:10px 10px;
+    display: flexbox;
+    flex-wrap: wrap;
     text-align: center;
     border-radius: 15px;
     min-width: 50px;
@@ -124,7 +126,17 @@ button:hover{text-decoration: underline;}
 .botton{
     font-size: 8px;
     margin:auto;
+    display: flex;
+    flex-wrap:wrap ;
 }
+.navbar a{
+    font-size: 24px;
+}
+right{
+    font-size: 10px;
+    padding: 5px 5px;
+}
+
 @media screen  and (min-width:721px) {
 .botton{
     font-size: 12px;

@@ -1,26 +1,29 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="program.css">
-        
-    </head>
-
-    <body>
-        <h1>PROGRAM 3</h1>
-        <div> Design, Develop and Implement a menu driven Program in C for the following Array operations<br>
-            Design, Develop and Implement a menu driven program in C for the following operations on
-        STACK of integers (Array implementation of stack with maximum size MAX)<br>
-        a. Push an element on to stack<br>
-        b. Pop an element from stack.<br>
-        c. Demonstrate how stack can be used to check palindrome.<br>
-        d. Demonstrate Overflow and Underflow situations on stack.<br>
-        e. Display the status of stack.<br>
-        f. Exit.<br>
-        Support the program with appropriate functions for each of the above operations.<br>
-        </div>
-    <b>
-    
-    <pre>
-        
+<html>  
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="program.css">
+    <title>Program 3</title>
+</head>
+<body class="main">
+    <header class='navbar'>
+        <a href="../index.html">Home</a>
+        <a href="#index">Index</a>
+        <a href=#about>About</a>
+    </header>
+    <h1 class="pgmno">PROGRAM 3</h1>
+    <pgm class='head'>Design, Develop and Implement a menu driven Program in C for the following Array operations<br>
+        Design, Develop and Implement a menu driven program in C for the following operations on
+    STACK of integers (Array implementation of stack with maximum size MAX)<br>
+    a. Push an element on to stack<br>
+    b. Pop an element from stack.<br>
+    c. Demonstrate how stack can be used to check palindrome.<br>
+    d. Demonstrate Overflow and Underflow situations on stack.<br>
+    e. Display the status of stack.<br>
+    f. Exit.<br>
+    Support the program with appropriate functions for each of the above operations.<br>
+    </pgm>
+<pgm class='container'>
+<pre>
 #include&lt;stdio.h&gt;
 #include&lt;stdlib.h&gt;
 #define MAX 10
@@ -35,7 +38,7 @@ void push(int stack[],int item)
         stack[++top]=item;
         status++;
     }
-
+    
 }
 int pop (int stack[])
 {
@@ -49,7 +52,7 @@ int pop (int stack[])
         printf("\n popped element is %d",ret);
     }
     return ret;
-
+    
 }
 void palindrome(int stack[])
 {
@@ -78,7 +81,7 @@ void display(int stack[])
         printf("\n");
     }
 }
-
+    
 void main()
 {   do
     {
@@ -90,7 +93,7 @@ void main()
         printf("\n Enter your choice\n");
         scanf("%d",&amp;ch);
         switch(ch)
-
+    
         {
             case 1:printf("\n Enter an element to be pushed:");
             scanf("%d",&amp;item);
@@ -107,10 +110,14 @@ void main()
         }
     }while(ch!=4);
 }
-     
-    </pre>
-    </b>
-       
-    </body>
-    <centre><h5>Developed by Anonymous. All rights reserved.</h5></centre>
+</pre>
+</pgm>
+<p><a name="about"></a></p>
+        <footer class='container' style=" font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;border: none;">
+            <button class='button item' >About</button>  
+            <button class='button item'> Contact us</button>  
+            <button class='button item'>Location</button>
+        </footer>
+       <center> <right> Website Designed and Developed by Rohith</right> </center>
+</body>
 </html>

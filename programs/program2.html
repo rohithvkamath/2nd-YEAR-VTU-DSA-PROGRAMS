@@ -1,23 +1,26 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="program.css">
-        
-    </head>
-
-    <body>
-        <h1>PROGRAM 2</h1>
-        <div>  Design, Develop and Implement a Program in C for the following operations on Strings<br>
-            a. Read a main String (STR), a Pattern String (PAT) and a Replace String (REP)<br>
-            b. Perform Pattern Matching Operation: Find and Replace all occurrences of PAT in STR
-                with REP if PAT exists in STR. Report suitable messages in case PAT does not exist in
-            STR<br>
-            Support the program with functions for each of the above operations. <br>
-            <b>Don't use Built-in functions</b><br>
-        </div>
-    <b>
-    
-    <pre>
-        <code>
+<html>  
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="program.css">
+    <title>Program 2</title>
+</head>
+<body class="main">
+    <header class='navbar'>
+        <a href="../index.html">Home</a>
+        <a href="#index">Index</a>
+        <a href=#about>About</a>
+    </header>
+    <h1 class="pgmno">PROGRAM 2</h1>
+    <pgm class='head'> Design, Develop and Implement a Program in C for the following operations on Strings<br>
+        a. Read a main String (STR), a Pattern String (PAT) and a Replace String (REP)<br>
+        b. Perform Pattern Matching Operation: Find and Replace all occurrences of PAT in STR
+            with REP if PAT exists in STR. Report suitable messages in case PAT does not exist in
+        STR<br>
+        Support the program with functions for each of the above operations. <br>
+        <b>Don't use Built-in functions</b><br>
+    </pgm>
+<pgm class='container'>
+<pre>
 #include&#x3C;stdio.h&#x3E;
 #include&#x3C;stdlib.h&#x3E;
 char str[100],rep[100],pat[100],temp[100];
@@ -49,7 +52,7 @@ void is_match()
         }
         temp[y]=&#x27;\0&#x27;;
     }
-            
+                
 }
 void main()
 { 
@@ -64,12 +67,16 @@ void main()
     {
         printf(&#x22;The String after replacing is: %s \n&#x22;,temp);
     }
-    else printf(&#x22;Pattern element is not found...&#x22;);
+        else printf(&#x22;Pattern element is not found...&#x22;);
 }
-    </code>
-    </pre>
-    </b>
-       
-    </body>
-    <centre><h5>Developed by Anonymous. All rights reserved.</h5></centre>
+</pre>
+</pgm>
+<p><a name="about"></a></p>
+        <footer class='container' style=" font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;border: none;">
+            <button class='button item' >About</button>  
+            <button class='button item'> Contact us</button>  
+            <button class='button item'>Location</button>
+        </footer>
+       <center> <right> Website Designed and Developed by Rohith</right> </center>
+</body>
 </html>

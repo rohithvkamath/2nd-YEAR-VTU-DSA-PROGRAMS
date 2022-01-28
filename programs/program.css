@@ -1,127 +1,162 @@
-body {
-  background-color:aqua;
+.navbar {
+  overflow: hidden;
+  background-color: #537895;
+  background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.navibar p{
+  float: right;
 
 }
-dt{
-  position:sticky;
-}
-
-h1 {
+.main{
+  padding: 15px;
+  margin-top: 50px;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 46px;
   color: black;
-  background-color:antiquewhite ;
+}
+.wel{
+  border: none;
+  background-color: #9eabe4;
+  background-image: linear-gradient(315deg, #9eabe4 0%, #77eed8 74%);
+  padding: 15px;
+  font-size: 36px;
+  border-radius: 20px;
+  
+}
+.pgmno{
+  border: none;
+  margin: 15px;
+  background-color: #9eabe4;
+  background-image: linear-gradient(315deg, #9eabe4 0%, #77eed8 74%);
+  padding: 5px;
+  font-size: 30px;
   text-align: center;
-  font-size: 36px;
-  border: 5px solid black;
-  
- 
-
-  }
-code
-{
-    text-align: left;
-    font-size: 22px;
-}
-div{
-  color:royalblue;
-  background-color: blanchedalmond; 
-  text-align: left;
-  font-size: 36px;
-  border: 5px solid black;
-padding-top: 15px;
- padding-right: 1px;
- padding-bottom: 15px;
- padding-left: 30px;
- position:sticky;
-}
-
-@media screen and (min-width: 900px) {
- pre{
-  border: 3px solid black;
-   width: 100%;
-   text-align: relative;
-   font-size: 22px;
-   /* width: 2000px;
-height:auto;
-padding: 100px;
-border: 5px solid black;*/
-
-
-  }
-  div
-{
-  border: 5px solid black;
-   width: auto;
-    font-size: 36px;
-    /*width: 2000px;
-    height:auto;
-    padding: 100px;
-    border: 5px solid black;
-    text-align: center;*/
-
-}
-h1{ 
-  border: 5px solid black;
-   width: auto;
-}
-h5{
-  border: 5px solid black;
-   width: auto;
-   font-size: 15px;
-}
+  border-radius: 15px;
 }
 
 
-@media screen and (max-width: 900px) {
-pre{
-    color:black;
-    text-align: relative;
-    border: 3px solid black;
-    width:relative;
-    background-color: aqua;
-    font-size: 15px;
-     
-}
-h1{
-  font-size:23px;
-}
-div{
-  font-size: 18px;
-
-  
-}
-code{
-  font-size: 15px;
-}
-h5{
-  border: 5px solid black;
-   width: auto;
-   font-size: 5px;
-}
-}
-pre{
-   color:black;
-    border: 3px solid black;
-    background-color: aqua;
-    box-sizing: border-box;
-    display: inline-block;
-    font-size:20 px;
-    padding-right: 15px;
-    padding-bottom: 15px;
-    padding-left: 20px;
-    
- 
-
-}
-
-
-h5{
-  color:black;
-  font-size:15px;
+.program_head{
+  padding: 15px;
+  font-family: 'Times New Roman', Times, serif;
+  border:none;
   background-color: white;
-  text-align: center;
-  border: 5px solid black;
-
-  
 
 }
-/*this is a css file*/
+.navbar a:hover {
+  background: white;
+  color: black;
+}
+body{
+  margin:0;
+/*  background-image: linear-gradient(315deg, #6a93cb 25%, #a4bfef 74%);*/
+  background: url("images/background.jpg");
+  scroll-behavior: smooth;
+  background-attachment: fixed;
+  font-family: 'Trebuchet MS';
+}
+
+
+.center{
+  font-family: 'trebuchet MS';
+  text-align: center;
+}
+.head{
+  background-color: #fee2f8;
+  background-image: linear-gradient(315deg, #fee2f8 0%, #dcf8ef 74%);  
+  font-size: 26px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+}
+
+.container{
+  display: flex;
+  flex-wrap:wrap;
+  
+}
+.item{
+  border-radius: 15px;
+  flex: 1 1 250px;
+
+}
+.button {
+  background-image: linear-gradient(315deg, #734ae8 0%, #89d4cf 74%);
+  border: none;
+  padding: 15px;
+  text-align: center;
+  font-size: 16px;
+  margin:20px 15px;
+  cursor: pointer;
+  
+  
+}
+pre{
+  text-align: left;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+}
+pgm{
+  border:none;
+  margin:15px;
+  background-color: #045de9;
+  background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+  font-size: 20px;
+  padding:15px 15px;
+  padding-left: 5%;
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+right{
+  border:none;
+  margin:15px;
+  color: whitesmoke;
+  background-color: #485461;
+  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+  font-size: 15px;
+  padding:10px 10px;
+  display: flexbox;
+  flex-wrap: wrap;
+  text-align: center;
+  border-radius: 15px;
+  min-width: 50px;
+}
+button:hover{text-decoration: underline;}
+@media screen and (max-width:720px) {
+.botton{
+  font-size: 8px;
+  margin:auto;
+  display: flex;
+  flex-wrap:wrap ;
+}
+.navbar a{
+  font-size: 24px;
+}
+right{
+  font-size: 10px;
+  padding: 5px 5px;
+}
+
+@media screen  and (min-width:721px) {
+.botton{
+  font-size: 12px;
+}
+  
+}
+  
+}
+
+

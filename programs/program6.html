@@ -1,0 +1,106 @@
+<html>  
+<head>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="program.css">
+    <title>Program 6</title>
+</head>
+<body class="main">
+    <header class='navbar'>
+        <a href="../index.html">Home</a>
+        <a href="../html/in.html">Index</a>
+        <a href=#about>About</a>
+    </header>
+    <h1 class="pgmno">PROGRAM 6</h1>
+    <pgm class='head'> Design, Develop and Implement a menu driven Program in C for the following operations on
+        Circular QUEUE of Characters (Array Implementation of Queue with maximum size MAX).<br>
+        a. Insert an Element on to Circular QUEUE.<br>
+        b. Delete an Element from Circular QUEUE.<br>
+        c. Demonstrate Overflow and Underflow situations on Circular QUEUE.<br>
+        d. Display the status of Circular QUEUE.<br>
+        e. Exit.<br>
+        Support the program with appropriate functions for each of the above operations.<br>
+    </pgm>
+<pgm>
+<pre class="prettyprint lang-c">
+#include&lt;stdio.h&gt;
+#define MAX5
+int q[MAX],f=0,r=-1,count=0;
+void insert (int item)
+{
+ if (count==MAX)
+ printf("Queue Overflow\n");
+ else
+    {
+     r=(r+1)%MAX;
+     q[r]=item;
+     count=count+1;
+    }
+}
+int delet()
+{
+ int itemdel;
+ if (count==0)
+ return 0;
+ else
+{
+itemdel=q[f];
+f=(f+1)%MAX;
+count=count-1;
+return (itemdel);
+}
+}
+void display()
+{
+ int i,j;
+ if (count==0)
+ printf("Q empty\n");
+ else
+    {
+     i=f;
+     for (j=1;j&lt;=count;j++)
+        {
+         printf("%d\t",q[i]);
+         i=(i+1)%MAX;
+        }
+    }
+}
+void main()
+{
+ int ch,item,itemdel;
+ while (1)
+    {
+     printf("\nEnter the choice\n");
+     printf("1.Insert\t2.Delete\t3.Display\t4.Exit\n");
+     scanf("%d",&ch);
+     switch(ch)
+        {
+         case 1: printf("Enter the item\n");
+         scanf("%d",&item);
+         insert(item);
+         break;
+         case 2: itemdel=delet();
+         if (itemdel)
+         printf("The deleted item is %d\n",itemdel);
+         else
+         printf("Queue underflow\n");
+         break;
+         case 3: display();
+         break;
+         case 4: exit(0);
+         default: printf("Enter a valid choice\n");
+        }
+    }
+ getch();
+}
+</pre>
+</pgm>
+<p><a name="about"></a></p>
+        <footer class='container' style=" font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;border: none;">
+            <button class='button item' >About</button>  
+            <button class='button item'> Contact us</button>  
+            <button class='button item'>Contribute</button>
+        </footer>
+       <center> <right> Website Designed and Developed by Rohith V Kamath</right> </center>
+</body>
+</html>

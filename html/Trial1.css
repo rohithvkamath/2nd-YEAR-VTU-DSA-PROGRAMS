@@ -1,0 +1,103 @@
+*{
+    background-color: #e5e5e5;
+}
+.navibar{
+    background-color:#e1e1e1;
+    width: 100%;
+    height: 110px;
+    position: fixed;
+    top:0%;
+    left: 0%;
+}
+.navibar object{
+    background-color: #c4c4c4;
+    border-radius: 50px;
+    width: 100px;
+    height:100px;
+    margin-left:2.083%;
+    margin-top: .25%;
+}
+.navimenu{
+    background-color: #c4c4c4;
+    font-size: 20px;
+    max-height: 30px;
+    color: black;
+    padding: 16px 14px;
+    text-decoration: none;
+    float: right;
+    color: #f9f9f9;
+    transform: translateY(25px);
+    display: flex;
+    flex-wrap: nowrap;
+}
+a:hover{
+    background-color: #6b6b6b;
+    color: #ffffff;
+}
+.dropdown{
+    background-color: #c4c4c4;
+    font-size: 20px;
+    max-height: 30px;
+    color: black;
+    padding: 16px 14px;
+    text-decoration: none;
+    float: right;
+    transform: translateY(25px);
+
+} 
+.droplink{
+    background-color:#c4c4c4;
+    color: #f9f9f9;
+    text-decoration: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover{
+    background-color: #6b6b6b;
+}
+.dropdown:hover .droplink{
+    background-color: #6b6b6b;
+}
+  .dropdown:hover .dropdown-content {
+    display: block;
+
+  }
+.dropdown-content a:hover{
+    color: white;
+}
+@media screen and (max-width:900px) {
+.navibar a{
+    font-size: 15px;
+    transform: translateY(20px);
+}
+.dropdown{
+    transform: translateY(20px);
+}
+.navibar{
+    height:90px;
+    
+}
+
+.navibar object{
+    width:60px;
+    height:60px;
+    transform: translateY(15px);
+
+}
+}
